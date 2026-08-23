@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelowna Smoke Dashboard</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(180deg, #fdf6ec 0%, #f5ede0 100%);
+    color: #2b2620;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+    color: #7a3b12;
+  }
+  .subtitle {
+    color: #8a7d6a;
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+  }
+  .card {
+    display: block;
+    background: #ffffff;
+    border: 1px solid #e8ddc8;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+  }
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #b5541c;
+    margin-bottom: 4px;
+  }
+  .card-desc {
+    font-size: 0.88rem;
+    color: #7a7062;
+  }
+  .arrow {
+    float: right;
+    color: #c9a680;
+    font-size: 1.2rem;
+  }
+  footer {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 0.75rem;
+    color: #b0a48f;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🔥 Kelowna Smoke Dashboard</h1>
+  <p class="subtitle">Quick links for checking wildfire activity and air quality around Kelowna, BC.</p>
+
+  <a class="card" href="https://www.google.com/maps/@50.551396,-122.2977214,7z/data=!4m2!21m1!1s%2Fg%2F11ntspmljm!5m1!1e8?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+    <span class="arrow">↗</span>
+    <div class="card-title">Google Maps</div>
+    <div class="card-desc">Regional view with Medium/Heavy smoke layers</div>
+  </a>
+
+  <a class="card" href="https://wildfiresituation.nrs.gov.bc.ca/map" target="_blank" rel="noopener noreferrer">
+    <span class="arrow">↗</span>
+    <div class="card-title">BC Gov Wildfire Map</div>
+    <div class="card-desc">Multiple layers including Wildfires, Smoke Forecase & Road Events</div>
+  </a>
+
+  <a class="card" href="https://www.env.gov.bc.ca/epd/bcairquality/data/station.html?id=E317850+PM25_24" target="_blank" rel="noopener noreferrer">
+    <span class="arrow">↗</span>
+    <div class="card-title">Kelowna Road AQI Station</div>
+    <div class="card-desc">Rolling 24 hour PM2.5 & PM10 air quality readings from Kelowna Road station</div>
+  </a>
+
+  <footer>Last updated manually — links open in a new tab.</footer>
+</div>
+</body>
+</html>
